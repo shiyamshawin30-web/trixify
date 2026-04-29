@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy | Trixify</title>
+    <link rel="stylesheet" href="css/style.css?v=5.0">
+</head>
+<body style="background: var(--bg-white);">
+    <div class="nmra-bar">CRAFTING DIGITAL EXPERIENCES THAT <strong>DRIVE RESULTS</strong> ✓</div>
+    <nav class="main-nav">
+        <a href="index.html" class="nav-brand">Trix<span>IFY</span></a>
+    </nav>
+
+    <div style="padding: 100px 10%; max-width: 900px; margin: auto;">
+        <h1 class="section-title scroll-fade" style="text-align: left;">Privacy Commitment</h1>
+        <p class="scroll-fade" style="color: var(--gray-mid); margin-bottom: 30px; line-height: 1.8;">
+            At <strong>Trixify</strong>, your privacy is a cornerstone of our professional relationship. This policy outlines how we protect your project data and personal information.
+        </p>
+        
+        <h2 class="scroll-fade" style="margin: 40px 0 15px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px;">1. Project Information</h2>
+        <p class="scroll-fade" style="color: var(--gray-mid); margin-bottom: 20px; line-height: 1.8;">
+            We collect only essential information required to execute your web development and design projects. This includes project briefs, brand assets, and contact details.
+        </p>
+        
+        <h2 class="scroll-fade" style="margin: 40px 0 15px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px;">2. Confidentiality</h2>
+        <p class="scroll-fade" style="color: var(--gray-mid); margin-bottom: 20px; line-height: 1.8;">
+            All project details and brand secrets shared with us are kept strictly confidential. We do not share your proprietary information with third parties without explicit consent.
+        </p>
+
+        <h2 class="scroll-fade" style="margin: 40px 0 15px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px;">3. Secure Storage</h2>
+        <p class="scroll-fade" style="color: var(--gray-mid); margin-bottom: 20px; line-height: 1.8;">
+            We use industry-standard security measures to ensure your project files and data are stored safely during and after the development process.
+        </p>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p class="copy-text">© Trixify 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-fade, .section-title').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

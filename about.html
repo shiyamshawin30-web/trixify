@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission | Trixify</title>
+    <link rel="stylesheet" href="css/style.css?v=5.0">
+</head>
+<body style="background: var(--bg-white);">
+    <div class="nmra-bar">CRAFTING DIGITAL EXPERIENCES THAT <strong>DRIVE RESULTS</strong> ✓</div>
+    <nav class="main-nav">
+        <a href="index.html" class="nav-brand">Trix<span>IFY</span></a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div style="padding: 120px 10%; max-width: 1200px; margin: auto; text-align: center;">
+        <h1 class="section-title scroll-fade">The Trixify Story</h1>
+        <p class="scroll-fade" style="margin-top: 40px; color: var(--gray-mid); font-size: 1.2rem; line-height: 2; font-weight: 400; max-width: 800px; margin-inline: auto;">
+            In the ever-evolving digital landscape, <strong>Trixify</strong> was established in 2026 as a creative hub for innovation and design. Based on a passion for technology and art, our agency was born from a singular vision: to empower businesses with high-performance websites and compelling visual identities.
+        </p>
+        <p class="scroll-fade" style="margin-top: 30px; color: var(--gray-mid); font-size: 1.2rem; line-height: 2; font-weight: 400; max-width: 800px; margin-inline: auto;">
+            We believe that every digital touchpoint is an opportunity to tell a story. From clean, scalable code to stunning poster designs, we blend technical expertise with creative intuition to deliver solutions that are as functional as they are beautiful.
+        </p>
+        <p class="scroll-fade" style="margin-top: 30px; color: var(--gray-mid); font-size: 1.2rem; line-height: 2; font-weight: 400; max-width: 800px; margin-inline: auto;">
+            Today, Trixify stands as a partner for brands looking to elevate their digital presence, offering a personalized approach that turns ideas into impactful digital realities.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo">Trix<span>IFY</span></a>
+                <p>Trixify is a creative digital agency dedicated to helping businesses grow through high-quality web development and visual design.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Agency</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" style="margin-top: 60px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+            <p class="copy-text" style="color: white; opacity: 0.7;">© Trixify 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
