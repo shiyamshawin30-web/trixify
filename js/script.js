@@ -68,4 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Search Icon Toggle
+    const searchIcon = document.querySelector('.fa-search');
+    if (searchIcon) {
+        searchIcon.addEventListener('click', () => {
+            alert('Search functionality coming soon! You can add a search form or modal here.');
+        });
+    }
 });
