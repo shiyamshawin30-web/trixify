@@ -9,6 +9,23 @@ window.observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 document.addEventListener('DOMContentLoaded', () => {
+    // --- PRELOADER LOGIC ---
+    const preloader = document.getElementById('preloader');
+    const body = document.body;
+
+    if (preloader) {
+        // Wait 2 seconds before starting the transition
+        setTimeout(() => {
+            body.classList.remove('loading');
+            body.classList.add('loaded');
+            
+            // Additional delay to allow the CSS transition to complete before removing from DOM
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 800);
+        }, 2000);
+    }
+
     // Observe initial static elements
     document.querySelectorAll('.section-title, .scroll-fade, .service-card, .portfolio-item, .process-step, .testimonial-card, .faq-item, .domain-ticker-section').forEach(el => {
         if (window.observer) window.observer.observe(el);
