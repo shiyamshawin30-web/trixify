@@ -51,12 +51,12 @@ body {
 .main-nav {
     background: transparent;
     color: var(--text-white);
-    padding: 30px 5%;
+    padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 40px;
+    top: 28px;
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -970,6 +970,15 @@ button:active, .add-cart-btn:active {
     border-radius: 4px;
 }
 
+/* --- GLOBAL SECTION SPACING REDUCTION --- */
+section {
+    padding: 55px 5%;
+}
+
+.section-title {
+    margin-bottom: 35px;
+}
+
 /* --- MAIN GRID (4 COLUMNS) --- */
 .main-grid {
     display: grid;
@@ -1049,7 +1058,7 @@ button:active, .add-cart-btn:active {
 
 /* --- BRAND TICKERS --- */
 .brand-ticker-section {
-    padding: 50px 0;
+    padding: 40px 0;
     background: var(--bg-white);
     overflow: hidden;
     border-top: 1px solid var(--border-light);
